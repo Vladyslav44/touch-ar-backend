@@ -12,7 +12,7 @@ const corsOptions = {
         'https://touchcar.kiev.ua',
         'http://localhost:5173'
     ],
-    methods: ['GET', 'POST'],
+    methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true,
 };
 

@@ -1,16 +1,9 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/send-message",
-      "methods": ["POST"],
-      "dest": "/api/send-message.js"
-    }
-  ],
-  "builds": [
-    {
-      "src": "api/send-message.js",
-      "use": "@vercel/node"
+      "source": "/(.*)",
+      "destination": "/api"
     }
   ]
 }
